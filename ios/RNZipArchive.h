@@ -6,14 +6,13 @@
 //  Copyright (c) 2015 Perry Poon. All rights reserved.
 //
 
-
 #if __has_include(<React/RCTBridgeModule.h>)
 #import <React/RCTBridgeModule.h>
 #else
 #import "RCTBridgeModule.h"
 #endif
-#import "SSZipArchive/RNZASSZipArchive.h"
+#import "SSZipArchive/SSZipArchive.h"
 
-@interface RNZipArchive : NSObject<RCTBridgeModule, RNZASSZipArchiveDelegate>
+@interface RNZipArchive : NSObject <RCTBridgeModule, SSZipArchiveDelegate>
 
 @end
